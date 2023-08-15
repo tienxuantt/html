@@ -7,6 +7,7 @@ class Dashboard{
         me.initEvents();
     }
 
+    // Khởi tạo sự kiện
     initEvents(){
 
     }
