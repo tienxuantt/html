@@ -14,6 +14,13 @@ class Login{
         // Khởi tạo sự kiện khi submit form
         $("#btnSubmit").off("click");
         $("#btnSubmit").on("click", me.submitForm.bind(me));
+
+        // Sự kiện khi nhấn enter
+        $(document).on('keypress',function(e) {
+            if(e.which == 13) {
+                me.submitForm();
+            }
+        });
     }
 
     // Xử lý submit form
