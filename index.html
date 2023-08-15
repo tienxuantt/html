@@ -6,9 +6,11 @@
 
   <meta charset="UTF-8"> 
 
-  <title>ntxuan</title> 
+  <title>NHSX</title> 
 
-  <link rel="stylesheet" href="./style.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.23/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/Common.css">
+  <link rel="stylesheet" href="./Assets/CSS/Login.css"> 
 
  </head> 
 
@@ -26,13 +28,13 @@
 
       <div class="inputBox"> 
 
-       <input type="text" required> <i>Username</i> 
+       <input type="text" id="txtUserName" required> <i>Username</i> 
 
       </div> 
 
       <div class="inputBox"> 
 
-       <input type="password" required> <i>Password</i> 
+       <input type="password" id="txtPassWord" required> <i>Password</i> 
 
       </div> 
 
@@ -42,7 +44,7 @@
 
       <div class="inputBox"> 
 
-       <input type="submit" value="Login"> 
+       <input type="submit" id="btnSubmit" value="Login"> 
 
       </div> 
 
@@ -53,6 +55,11 @@
    </div> 
 
   </section> <!-- partial --> 
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.23/dist/sweetalert2.all.min.js"></script>
+  <script src="./Assets/Scripts/Login.js"></script>
 
  </body>
 
