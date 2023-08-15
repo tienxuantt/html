@@ -16,7 +16,7 @@ class Login{
         $("#btnSubmit").on("click", me.submitForm.bind(me));
 
         // Sự kiện khi nhấn enter
-        $(document).on('keypress',function(e) {
+        $(document).on('keypress',"#txtUserName, #txtPassWord", function(e) {
             if(e.which == 13) {
                 me.submitForm();
             }
