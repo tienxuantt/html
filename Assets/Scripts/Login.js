@@ -29,15 +29,7 @@ class Login{
             valid = me.validateForm();
 
         if(valid){
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Đăng nhập thành công',
-                showConfirmButton: false,
-                timer: 1500
-              });
-
-              $("#txtUserName").val()
+            window.location.href = 'https://ntxuan.click/Views/Dashboard.html';
         }else{
             Swal.fire('Tên đăng nhập hoặc mật khẩu không đúng!');
         }
